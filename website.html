@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>My Portfolio Website</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="script.js"></script>
+  
+  <style>
+body {
+    border: 1px ridge black;
+}
+aside{
+  background-color: lightgray;
+}
+</style>
+
+  
+</head>
+
+<body>
+
+  <header>
+    <h1>Adam ELDabet</h1>
+   
+      
+      
+      <picture>
+      <img height="140" width="105" src="/assets/me.jpg" alt ="Profile Picture" >
+      </picture>
+      
+    <nav>
+
+      <ul>
+        
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills and Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experiments">Experiments</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>About</h1>
+
+    <p>Welcome to my portfolio site!</p>
+
+    <section id="about">
+      <h2>Background</h2>
+      
+      <p>My name is <b>Adam ELDabet</b> and I'm currently a junior at University of California San Diego studying computer engineering.</p>
+      <br/>
+      
+
+      <h2>Interests & Hobbies</h2>
+      
+      <pre>I am interested in both frontend and backend as well as AI and Machine Learning.
+My hobbies include going to the gym and playing soccer and chess. 
+<br />
+
+</pre>
+      
+    </section>
+    
+    <section id="skills">
+    
+      <h2>Skills & Projects</h2>
+      <p>Here are the <strong>programming languages</strong> I am proficeint in:</p>
+    
+      <ul>
+        
+        <li>Java</li>
+        <li>JavaScript/HTML/CSS</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>SQL</li>
+        <li>React</li>
+      
+      </ul>
+  
+      
+      <h2> <b>Projects:</b></h2>
+      <div>
+        
+        <h4>Card Tracking App Javascript(React)</h4>
+        
+        <p>
+          A mobile application designed to <em>revolutionize</em> bundle/card shipment tracking from issuers to recipients or
+          authorized agents responsible for card pickups.</p>  
+          
+        </div>
+      
+      
+    </section>
+
+    <section id="experience">
+    
+      <h2>Work Experience</h2>
+      
+      
+      <p> <b>Icode (Application Developer):</b></p>
+      <ul>
+        <li>Created software applications in test-driven development environment.</li>
+        <li>Designed and developed application scripts for test scenarios.</li>
+        <li>Wrote code for database applications.</li> 
+        <li>Used ASP.NET, JavaScript and SQL Server to develop new applications.</li> 
+      </ul>
+      
+      <p> <b>UCSD Transportation Services (Field Servcies Representative)</b></p>
+      <ul>
+        <li>Patrolled campus parking areas on foot and by vehicle to enforce University parking regulations and
+          manage parking facilities using License Plate Recognition software</li>
+        <li>Prepared neat and detailed citations and reports, including daily shift logs, and testified in court as
+          necessary</li>
+       
+      </ul>
+    </section>  
+    
+    <section id="contact">
+  
+        <h2>Contact</h2>
+
+        <ol>
+          
+         <li> <b>Phone Number: </b> 6197075865</li>
+         <li> <b>Email </b> adamdabet@gmail.com</li>
+         <li><a href="https://www.linkedin.com/in/adam-dabet-844452243/">Linkedin</a></li>
+         <li><a href="https://github.com/adam-dabet/adam-dabet">Github</a></li>
+
+        </ol>
+
+    </section>  
+  </main>
+    <section id="experiments">
+      <h2>Experiments</h2>
+
+      <code>
+        Here is some code: 
+        for x in range(0:10):
+          x++
+      </code>
+      <svg>
+
+        <circle cx="20" cy="20" r="10" ></circle>
+      </svg>
+    
+    <label for="sample-text-area">Add your name here:</label>
+        <textarea id="sample-text-area">Name...</textarea>
+        <button type="submit">Save</button>
+    <form>
+      <fieldset>
+        <legend>Tell me about yourself</legend>
+        <label>Select your age:</label>
+        <input type="radio" id="10" name="age" />
+        <label for="10">10-20</label>
+        <input type="radio" id="21" name="age" />
+        <label for="21">21-30</label>
+        <input type="radio" id="31" name="age" />
+        <label for="31">31-40</label>
+        <input type="radio" id="41" name="age" />
+        <label for="41">41-50</label>
+        <input type="radio" id="older" name="age" />
+        <label for="older">Older!</label>
+        <br />
+      </fieldset>
+    </form>
+    <label for="programming">Select your favorite programming language:</label>
+
+    <select id="programming">
+      <optgroup label="Front End">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="react">React</option>
+
+      </optgroup>
+      <optgroup label="Back End">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        
+      </optgroup>
+      <optgroup label="Other">
+        <option value="other">Other</option>
+    </select>
+    
+  <label for="favorite_sport">Choose your favorite sport:</label>
+
+  <datalist id="sports">
+  <option value="Soccer"></option>
+  <option value="Basketball"></option>
+  <option value="Football"></option>
+  <option value="Tennis"></option>
+  <option value="Other"></option>
+</datalist>
+<input list="sports" id="favorite_sport"  />
+
+<details>
+  <summary>psst!</summary>
+  If you reached this far into my portfolio, I'm so happy :)
+</details>
+<canvas id="myCanvas"></canvas>
+
+<script>
+  let canvas = document.getElementById("myCanvas");
+  let ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#FF0000";
+  ctx.fillRect(0, 0, 210, 2);
+  </script>
+<video controls  height="240">
+  
+  <source src="/assets/cat.mp4" type="video/mp4" />
+</video>
+<audio controls>
+<source src="/assets/hello.m4a" type="audio/mp4" />
+</audio>
+<iframe height= 500 src="https://www.ucsd.edu"> </iframe>
+  <hr />
+  <aside>      
+    <span dir="rtl" lang="ar"><i>مرحبا أنا اسمي آدم</i></span>
+  </aside>
+
+<template>
+  this content doesn't appear in my website yet!
+</template>
+<table>
+  <caption>
+    My Table 
+  </caption>
+  <tr>
+    <th>Class</th>
+    <th>Hours Spent per week</th>
+  </tr>
+  <tr>
+    <td>CSE134</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>ECE101</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>ECE65</td>
+    <td>18</td>
+  </tr>
+</table>
+<br />
+<table>
+  <colgroup>
+    <col span=3>
+  </colgroup>
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>DOB</th>
+  </tr> 
+  <tr>
+    <td>Adam</td>
+    <td>22</td>
+    <td>04/01/2003</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Smith</td>
+    <td>01/09/1999</td>
+  </tr>
+</table>
+
+<figure>
+  <img src="/assets/port.jpg" alt="figure" width="300">
+  <figcaption>This figure signifies that my portfolio for HW2 is done!</figcaption>
+</figure>
+    </section>
+  <footer>
+  
+    <p>&copy; 2023 Adam ELDabet</p>
+  
+  </footer>
+  
+</body>
+</html>
